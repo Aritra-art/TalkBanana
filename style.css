@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Sans+Pro&display=swap');
+
+:root{
+  --primary-color:#818cf8
+  ;
+}
+body {
+  margin: 0rem;
+  font-family: 'Roboto Mono', monospace;
+}
+.nav{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-bottom-left-radius: 1rem ;
+  border-bottom-right-radius: 1rem ;
+  padding: 1rem;
+  background-color: var(--primary-color);
+}
+.input{
+  padding-top: 1.5rem;
+  display: flex;
+}
+#btn-translate{
+  color: white;
+  margin: auto;
+  display: flex;
+  margin-top: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background-color: var(--primary-color);
+}
+#txt-input{
+  resize: none;
+  width: 85%;
+  height: 20vh;
+  padding: 1.5rem;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  font-size: large;
+}
+
+.hero-heading{
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.output-heading{
+  padding: 1rem;
+  text-align: center;
+  font-size: larger;
+}
+#output{
+  border:1px solid black;
+  width: 85%;
+  height: 20vh;
+  padding: 1.5rem;
+  display: flex;
+  margin: auto;
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.footer{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-top-left-radius: 1rem ;
+  border-top-right-radius: 1rem ;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+}
+.footer-heading{
+  
+  text-align: center;
+  margin-top: 0rem;
+}
+.non-bullet{
+  list-style: none;
+  padding-top: 0.5rem;
+  padding-inline-start:0rem ;
+}
+.list-item-inline{
+  display: inline;
+  padding: 0rem 1rem;
+}
+.link{
+  
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: white;
+}
