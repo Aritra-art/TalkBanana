@@ -26,9 +26,13 @@ function clearEventHandler() {
   showOutput("");
 }
 function clickEventHandler() {
-  var value = txtInput.value;
-  fetch(constructUrl(value))
-    .then((response) => response.json())
-    .then((json) => showOutput(json.contents.translated))
-    .catch(errorHandler);
+  if (txtInput.value) {
+    var value = txtInput.value;
+    fetch(constructUrl(value))
+      .then((response) => response.json())
+      .then((json) => showOutput(json.contents.translated))
+      .catch(errorHandler);
+  } else {
+    showOutput("Please enter a text to Translate");
+  }
 }
