@@ -15,6 +15,7 @@ clear.addEventListener("click", clearEventHandler);
 function errorHandler(error) {
   output.innerText = "Error Occured " + error;
   console.log("Error occured: " + error);
+  alert("something is wrong with server! try again later");
 }
 
 function showOutput(text) {
@@ -27,6 +28,7 @@ function clearEventHandler() {
 }
 function clickEventHandler() {
   if (txtInput.value) {
+    output.textContent = "Translation is in progress ... ";
     var value = txtInput.value;
     fetch(constructUrl(value))
       .then((response) => response.json())
